@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+<div class="container" ng-controller="indexController">
+
+    <h3>Проверь изменение курса USD к выбранной валюте и получи Gif-ку:</h3>
+
+    <div class="select-css" style="text-align: center;">
+        <select id="codes_select"></select>
+        <button id="btn" class="btn btn-danger" ng-click="compareExchangeRate()">Проверить</button>
+    </div>
+    <div id="out" ></div>
+
+</div>
+</body>
+</html>
