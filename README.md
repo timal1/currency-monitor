@@ -27,7 +27,7 @@ GET /api/v1/currencies
 ```  
 Получить Gif через запрос разницы курсов:  
 ```
-GET /api/v1/currencies/compare_rate/{titleCurrency}
+GET /api/v1/currencies/rates/{titleCurrency}
 ```  
 Приложение доступно по localhost:8090/  
 

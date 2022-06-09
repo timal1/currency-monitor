@@ -22,7 +22,7 @@ public class CurrencyController {
         return currencyService.loadListCurrency();
     }
 
-    @GetMapping("/compare_rate/{titleCurrency}")
+    @GetMapping("/rates/{titleCurrency}")
     public ResponseEntity<Map> compareExchangeRate(@PathVariable String titleCurrency) {
         log.info("Received titleCurrency: {}", titleCurrency);
         return currencyService.compareExchangeRate(titleCurrency);
